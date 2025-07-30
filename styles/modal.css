@@ -1,10 +1,11 @@
-#modal {
-  display: flex;
+#modal-cookie {
+  display: none;
+  /* display: flex; */
   justify-content: var(--inset-x, center);
   align-items: var(--inset-y, center);
   position: fixed;
   inset: 0;
-  z-index: 11500;
+  z-index: 888;
   pointer-events: auto;
 }
 .modal-bg {
@@ -20,7 +21,7 @@
   z-index: 10;
   padding: 60px;
   min-width: 670px;
-  width: var(--width);
+  width: 1128px;
   min-height: 352px;
   max-height: 100vh;
   scrollbar-arrow-color: transparent;
@@ -114,6 +115,7 @@
   transition: 0.2s ease-in-out;
 }
 .cookie-cancle {
+  cursor: pointer;
   flex: 1;
   background-color: #555;
   color: #ccc;
@@ -130,6 +132,7 @@
   background-color: #222;
 }
 .cookie-confirm {
+  cursor: pointer;
   flex: 1;
   background-color: #f2aa00;
   color: #000;
@@ -150,4 +153,59 @@
 }
 .cookie-confirm:hover {
   background-color: #f90;
+}
+@media screen and (max-width: 1024px) {
+  .modal-inner {
+    padding-inline: 40px;
+    min-height: 458px;
+  }
+  .cookie-inner {
+    min-height: 458px;
+  }
+  .cookie-container span {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 150%;
+    letter-spacing: -0.03em;
+  }
+  .cookie-footer > div {
+    min-width: 290px;
+    height: 88px;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 150%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .modal-inner {
+    padding-inline: 20px;
+    min-width: 335px;
+    min-height: 229px;
+  }
+  .cookie-header {
+    margin-top: 24px;
+  }
+  .cookie-header img {
+    width: auto;
+    max-height: 45px;
+  }
+  .cookie-inner {
+    padding: 20px;
+    width: 335px;
+    min-height: 229px;
+  }
+  .cookie-container {
+    margin-block: 16px 20px;
+  }
+  .cookie-container span {
+    font-weight: 500;
+    font-size: 13px;
+  }
+  .cookie-footer > div {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 150%;
+    min-width: 145px;
+    height: 44px;
+  }
 }

@@ -1,0 +1,96 @@
+#modal-youtube {
+  /* display: none; */
+  display: flex;
+  justify-content: var(--inset-x, center);
+  align-items: var(--inset-y, center);
+  position: fixed;
+  inset: 0;
+  z-index: 777;
+  pointer-events: auto;
+}
+.youtube {
+  position: relative;
+  max-width: var(--width);
+  width: 100%;
+  color: #fff;
+}
+.youtube-inner {
+  position: relative;
+  border-radius: 4px;
+}
+.youtube-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100px;
+  height: auto;
+  padding: 40px 60px 28px;
+  text-align: center;
+  border-radius: 4px 4px 0 0;
+  background: url("../assets/img/5a0c992.webp") top / cover no-repeat;
+}
+.youtube-header span {
+  font-size: 32px;
+  line-height: 1.4;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+}
+.youtube-container {
+  overflow: hidden;
+  position: relative;
+  padding: 0;
+  text-align: center;
+  border-radius: 0 0 4px 4px;
+  background: url("../assets/img/44603a6.webp") no-repeat 0 0 / cover;
+  box-shadow: 0 4px 8px -2px rgba(0, 0, 0, 0.1),
+    0 2px 4px -2px rgba(0, 0, 0, 0.06);
+}
+.youtube-video {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  cursor: pointer;
+}
+.youtube-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: none;
+}
+.youtube-btns {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding-block: 20px;
+}
+.youtube-btns > div {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  padding-inline: 28px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: -0.015em;
+  color: #393b45;
+  border-radius: 8px;
+  border: 1px solid #393b45;
+}
+.youtube-btns .youtube-noagain {
+  cursor: pointer;
+}
+.youtube-btns .youtube-close {
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+}
