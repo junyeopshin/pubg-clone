@@ -1,6 +1,6 @@
 #modal-youtube {
-  /* display: none; */
-  display: flex;
+  display: none;
+  /* display: flex; */
   justify-content: var(--inset-x, center);
   align-items: var(--inset-y, center);
   position: fixed;
