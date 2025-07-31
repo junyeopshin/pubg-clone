@@ -1,11 +1,11 @@
 #modal-youtube {
-  display: none;
-  /* display: flex; */
+  /* display: none; */
+  display: flex;
   justify-content: var(--inset-x, center);
   align-items: var(--inset-y, center);
   position: fixed;
   inset: 0;
-  z-index: 777;
+  z-index: 11500;
   pointer-events: auto;
 }
 .youtube {

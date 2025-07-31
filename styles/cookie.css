@@ -1,11 +1,11 @@
 #modal-cookie {
-  display: none;
-  /* display: flex; */
+  /* display: none; */
+  display: flex;
   justify-content: var(--inset-x, center);
   align-items: var(--inset-y, center);
   position: fixed;
   inset: 0;
-  z-index: 888;
+  z-index: 11500;
   pointer-events: auto;
 }
 .modal-bg {
@@ -21,7 +21,7 @@
   z-index: 10;
   padding: 60px;
   min-width: 670px;
-  width: 1128px;
+  /* width: 1128px; */
   min-height: 352px;
   max-height: 100vh;
   scrollbar-arrow-color: transparent;
