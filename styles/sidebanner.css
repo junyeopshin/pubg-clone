@@ -3,10 +3,35 @@
   z-index: 1500;
   inset-block-end: 130px;
   inset-inline-end: 20px;
-  transition: 0.2s ease-in-out;
-  animation: slide-right 0.2s;
-  animation-fill-mode: backwards;
-  animation-duration: 0.5s;
+
+  opacity: 0;
+  transform: translateX(20px);
+  pointer-events: none;
+  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+  display: none; /* 처음에는 숨김 */
+}
+/* 나타날 때 클래스 */
+.right-side-banner.show {
+  display: block; /* 보이도록 설정 */
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+}
+/* 사라질 때 클래스 */
+.right-side-banner.hide {
+  opacity: 0;
+  transform: translateX(20px);
+  pointer-events: none;
+}
+@keyframes slide-right {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 .trailer-banner {
   position: relative;
@@ -56,14 +81,4 @@
   -webkit-text-stroke-width: 0.15px;
   -webkit-text-stroke-color: hsla(0, 0%, 100%, 0.4);
   text-shadow: 0 2px 3.5px rgba(0, 0, 0, 0.2);
-}
-@keyframes slide-right {
-  0% {
-    opacity: 0;
-    transform: translate(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
 }

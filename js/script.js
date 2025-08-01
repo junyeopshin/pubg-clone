@@ -1,3 +1,22 @@
+// header 제어
+const header = document.querySelector(".header");
+let lastScrollTop = 0;
+
+window.addEventListener("scroll", () => {
+  const currentScroll =
+    window.pageYOffset || document.documentElement.scrollTop;
+
+  if (currentScroll > lastScrollTop) {
+    // 스크롤 다운하면 헤더 숨기기
+    header.style.transform = "translateY(-100%)";
+  } else {
+    // 스크롤 업하면 헤더 보이기
+    header.style.transform = "translateY(0)";
+  }
+
+  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // 음수 방지
+});
+
 // ================== Outlink Layer 열기/닫기 ==================
 
 // 요소 선택
@@ -64,3 +83,33 @@ if (modalCookie && modalCookieBtns.length) {
     });
   });
 }
+
+// ================== 오른쪽 사이드 배너 제어 ==================
+const rightSb = document.querySelector(".right-side-banner");
+const rightSbBtn = rightSb.querySelector(".btn-hide");
+
+// 유튜브 버튼 클릭 시 오른쪽 배너 나타내기
+modalYoutubeBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    rightSb.classList.remove("hide");
+    rightSb.style.display = "block"; // display:none -> block 변경
+    setTimeout(() => {
+      rightSb.classList.add("show"); // show 클래스 추가해 슬라이드 인 애니메이션
+    }, 10);
+  });
+});
+
+// 오른쪽 배너 숨기기 버튼 클릭 시 슬라이드 아웃 후 숨기기
+rightSbBtn.addEventListener("click", () => {
+  rightSb.classList.remove("show");
+  rightSb.classList.add("hide");
+
+  rightSb.addEventListener(
+    "transitionend",
+    () => {
+      rightSb.style.display = "none"; // 트랜지션 끝난 후 완전 숨기기
+      rightSb.classList.remove("hide"); // 초기 상태로 리셋
+    },
+    { once: true }
+  );
+});
