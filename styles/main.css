@@ -214,3 +214,217 @@
   color: #fff;
   white-space: nowrap;
 }
+.main-login {
+  z-index: 3;
+  position: relative;
+  width: 100%;
+  padding-block: 45px;
+  background-color: #371a93;
+}
+.main-login-inner {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: minmax(600px, 807px) minmax(250px, 1fr);
+  align-content: center;
+  -moz-column-gap: 40px;
+  column-gap: 40px;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-inline: 40px;
+}
+.main-login-platform {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  grid-row: 1 / span 2;
+}
+.main-login-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+}
+.main-login-btn {
+  cursor: pointer;
+  position: relative;
+  flex: 0 0 380px;
+  height: 120px;
+  padding: 0 18px;
+  background-color: #ffdf69;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  color: #000;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: -0.015em;
+}
+.main-login-btn:hover {
+  background-color: #ffee7e;
+}
+.main-login-box p {
+  display: flex;
+  align-items: center;
+  -webkit-padding-end: 20px;
+  padding-inline-end: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #fff;
+}
+.main-login-box::after {
+  content: "";
+  position: absolute;
+  inset-inline-end: 0;
+  inset-block: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #5c4ab5;
+}
+.main-login-link {
+  grid-column: 2 / 3;
+  margin-top: 0;
+  align-content: center;
+}
+.main-link-dropdown {
+  width: 100%;
+}
+.main-dropdown-menu {
+  display: inline-flex;
+  vertical-align: top;
+  transition: border-color 0.2s ease-in-out;
+  position: relative;
+  width: 100%;
+  height: 44px;
+  color: #ff0000;
+}
+.main-dropdown-wrap {
+  display: block;
+  position: relative;
+  width: inherit;
+}
+.main-dropdown {
+  cursor: pointer;
+}
+.dropdown-selected-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-align: start;
+  height: 100%;
+  padding-block: 0;
+  -webkit-padding-start: 20px;
+  padding-inline-start: 20px;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  -webkit-padding-end: 65px;
+  padding-inline-end: 65px;
+  width: 100%;
+  background: transparent;
+  outline: 0;
+  color: #555;
+  caret-color: inherit;
+  border-color: #fff;
+  transition: 0.2s ease-in-out;
+}
+.dropdown-selected {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.dropdown-selected span {
+  width: 100%;
+  word-break: break-all;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: "Roboto Condensed";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #fff;
+  text-align: start;
+}
+.dropdown-selected-item span.icon-arrow {
+  position: absolute;
+  inset-block-start: 50%;
+  inset-inline-end: 24px;
+  transform: translateY(-50%);
+  transition: 0.2s ease-in-out;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: top;
+}
+.dropdown-selected-item span.icon-arrow span {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  vertical-align: middle;
+  transition: 0.2s ease-in-out;
+}
+.main-dropdown-submenu {
+  display: none;
+  position: absolute;
+  inset-block-start: 100%;
+  inset-inline-start: 0;
+  width: 100%;
+  min-width: inherit;
+  max-height: 360px;
+  overflow-y: auto;
+  font-family: "Roboto Condensed";
+  font-weight: 500;
+  background: #fff;
+  z-index: 1501;
+  transition: 0.2s ease-in-out;
+}
+.main-dropdown-submenu::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+.main-dropdown-submenu::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+.main-dropdown-submenu::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.main-dropdown-submenu li {
+  display: flex;
+  align-items: center;
+  min-height: 30px;
+  padding-inline: 16px;
+  margin-block: 10px;
+  word-break: break-all;
+  cursor: pointer;
+  color: #000;
+  transition: 0.2s ease-in-out;
+}
+.main-dropdown-submenu li:hover {
+  background-color: #eee;
+  color: #000;
+}
+.main-dropdown-submenu li a {
+  flex: 1 1 100%;
+  padding-block: 4px;
+  text-align: start;
+  color: #000;
+  font-size: 16px;
+  line-height: 1.4;
+  transition: 0.2s ease-in-out;
+}
+.main-link-dropdown p {
+  margin-top: 12px;
+  font-family: "Roboto Condensed";
+  font-size: 12px;
+  line-height: 140%;
+  color: #fff;
+}

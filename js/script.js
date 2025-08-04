@@ -113,3 +113,20 @@ rightSbBtn.addEventListener("click", () => {
     { once: true }
   );
 });
+
+const dropdown = document.querySelector(".main-dropdown");
+const submenu = document.querySelector(".main-dropdown-submenu");
+const arrowIcon = document.querySelector(".dropdown-selected-item .icon-arrow");
+
+dropdown.addEventListener("click", () => {
+  const isDisplayed = submenu.style.display === "block";
+  // 토글 서브메뉴 보여짐 여부
+  submenu.style.display = isDisplayed ? "none" : "block";
+
+  // 토글 화살표 회전 스타일
+  if (isDisplayed) {
+    arrowIcon.style.transform = ""; // 원래 상태로 돌리기
+  } else {
+    arrowIcon.style.transform = "translateY(-50%) rotate(-180deg)";
+  }
+});
