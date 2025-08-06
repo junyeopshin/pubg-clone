@@ -130,3 +130,87 @@ dropdown.addEventListener("click", () => {
     arrowIcon.style.transform = "translateY(-50%) rotate(-180deg)";
   }
 });
+
+// footer 현재시각 기능
+function formatDateDot(dateObj) {
+  // 연도 4자리, 월 2자리, 일 2자리 (예: 2025.08.06)
+  const year = dateObj.getFullYear();
+  const month = String(dateObj.getMonth() + 1).padStart(2, "0"); // 월은 0부터 시작
+  const day = String(dateObj.getDate()).padStart(2, "0");
+
+  return `${year}.${month}.${day}`;
+}
+
+function updateDateTimes() {
+  const now = new Date();
+
+  // UTC 날짜 + 시간
+  // UTC용 Date 객체 생성
+  const nowUtc = new Date(now.toLocaleString("en-US", { timeZone: "UTC" }));
+  const utcDateString = formatDateDot(nowUtc);
+  const utcTimeString = now.toLocaleTimeString("en-GB", {
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+    hour12: false,
+    timeZone: "UTC",
+  });
+
+  // KST 날짜 + 시간
+  const nowKst = new Date(
+    now.toLocaleString("en-US", { timeZone: "Asia/Seoul" })
+  );
+  const kstDateString = formatDateDot(nowKst);
+  const kstTimeString = now.toLocaleTimeString("ko-KR", {
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+    hour12: false,
+    timeZone: "Asia/Seoul",
+  });
+
+  document.querySelector(
+    ".timezone-time.utc"
+  ).textContent = `${utcDateString} ${utcTimeString}`;
+  document.querySelector(
+    ".timezone-time.kst"
+  ).textContent = `${kstDateString} ${kstTimeString}`;
+}
+
+updateDateTimes();
+setInterval(updateDateTimes, 1000);
+
+// 고탑버튼 나타내기
+const goTopBtn = document.querySelector(".gotop-btn");
+const main = document.querySelector("main.main");
+
+window.addEventListener("scroll", () => {
+  const scrollY = window.scrollY; // 현재 문서 최상단에서 스크롤된 거리
+  const mainTop = main.offsetTop; // main 요소 문서 내 상단 위치
+  const mainHeight = main.offsetHeight; // main 요소 높이
+
+  // main 내부에서의 스크롤 위치(윈도우 스크롤 위치에서 main 상단 위치 뺌)
+  const relativeScroll = scrollY - mainTop;
+
+  // 0 이상이고 main 높이의 50% 이상이면 show 추가
+  if (relativeScroll >= mainHeight * 0.35) {
+    goTopBtn.classList.add("show");
+  } else {
+    goTopBtn.classList.remove("show");
+  }
+});
+
+// 사이드 버튼 sticky
+window.addEventListener("scroll", function () {
+  const main = document.querySelector(".main");
+  if (
+    window.scrollY + window.innerHeight >=
+    main.offsetTop + main.offsetHeight
+  ) {
+    goTopBtn.classList.add("sticky");
+    rightSb.classList.add("sticky");
+  } else {
+    goTopBtn.classList.remove("sticky");
+    rightSb.classList.remove("sticky");
+  }
+});

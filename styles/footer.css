@@ -1,0 +1,171 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  min-height: 682px;
+  padding-block: 80px;
+  padding-inline: 36px;
+  color: #aaa;
+  background: #000;
+  transition: 0.2s ease-in-out;
+}
+.footer-inner {
+  text-align: center;
+}
+.footer-social {
+  -webkit-margin-after: 80px;
+  margin-block-end: 80px;
+  transition: 0.2s ease-in-out;
+}
+.footer-social-list {
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  transition: gap 0.2s ease-in-out;
+}
+.footer-social-list a {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  color: #aaa;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.social-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  vertical-align: middle;
+  transition: 0.2s ease-in-out;
+}
+.social-icon-on {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  vertical-align: middle;
+  transition: 0.2s ease-in-out;
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+.footer-social-list a:hover .social-icon-on {
+  opacity: 1;
+}
+.footer-logo {
+  position: relative;
+}
+.footer-logo img {
+  vertical-align: top;
+  transition: 0.2s ease-in-out;
+  width: 214px;
+  height: 48px;
+  aspect-ratio: auto 214 / 48;
+}
+.footer-logo map area {
+}
+.footer-link {
+  font-weight: 500;
+  font-size: 14px;
+  font-family: "Noto Sans KR";
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  -webkit-margin-before: 32px;
+  margin-block-start: 32px;
+  font-style: normal;
+  line-height: 150%;
+  letter-spacing: -0.03em;
+  transition: 0.2s ease-in-out;
+}
+.footer-link-wrap {
+  display: flex;
+  position: relative;
+  margin-inline: 20px;
+  transition: 0.2s ease-in-out;
+}
+.footer-link-bar {
+  position: absolute;
+  inset-inline-end: -20px;
+}
+.footer-link-wrap a {
+  text-decoration: none;
+  color: #aaa;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.footer-link-wrap:first-child a {
+  font-weight: 700;
+}
+.footer-copyright {
+  font-size: 13px;
+  font-weight: 700;
+  font-family: "Noto Sans KR";
+  -webkit-margin-before: 24px;
+  margin-block-start: 24px;
+  line-height: 150%;
+  transition: 0.2s ease-in-out;
+}
+.footer-timezone {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-margin-before: 56px;
+  margin-block-start: 56px;
+  padding-block: 8px;
+  padding-inline: 16px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  transition: 0.2s ease-in-out;
+}
+.timezone-items {
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: #555;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  padding-inline: 32px;
+  transition: 0.2s ease-in-out;
+}
+.timezone-text {
+  -webkit-margin-end: 16px;
+  margin-inline-end: 16px;
+  transition: margin 0.2s ease-in-out;
+}
+.timezone-items.active {
+  color: #ccc;
+}
+.timezone-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  vertical-align: middle;
+  -webkit-margin-end: 8px;
+  margin-inline-end: 8px;
+  transition: 0.2s ease-in-out;
+}
+.timezone-items.active .timezone-text {
+  color: #fff;
+}
+.footer-grade {
+  -webkit-margin-before: 80px;
+  margin-block-start: 80px;
+  transition: margin 0.2s ease-in-out;
+}
+.footer-grade img {
+  width: auto;
+  height: 68px;
+  transition: 0.2s ease-in-out;
+  vertical-align: top;
+}

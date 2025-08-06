@@ -168,6 +168,10 @@
       href="https://wstatic-prod.pubg.com/web/live/static/favicons/favicon.ico"
     />
     <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/global.css" />
     <link rel="stylesheet" href="styles/youtube.css" />
@@ -175,9 +179,18 @@
     <link rel="stylesheet" href="styles/sidebanner.css" />
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/main.css" />
-    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/update-swiper.css" />
+    <link rel="stylesheet" href="styles/gallery-swiper.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+
     <!-- script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      defer
+    ></script>
     <script src="js/script.js" defer></script>
+    <script src="js/updateSwiper.js" defer></script>
+    <script src="js/gallerySwiper.js" defer></script>
   </head>
   <body>
     <div id="modal-youtube">
@@ -601,7 +614,6 @@
       </header>
       <main class="main">
         <div class="aespa">
-          <div class="gotop-btn"></div>
           <div class="right-side-banner">
             <div class="trailer-banner">
               <div class="btn-hide"></div>
@@ -939,11 +951,572 @@
               </div>
             </div>
           </div>
-          <div class="main-update"></div>
-          <div class="main-gallery"></div>
+          <div class="main-update">
+            <div class="update-title">
+              <h3>에스파 콜라보 월드에 오신 것을 환영합니다!</h3>
+              <p>에스파가 변화시킨 미라마를 체험해 보세요!</p>
+            </div>
+            <div class="update-swiper">
+              <div class="swiper">
+                <ul class="swiper-wrapper">
+                  <li class="swiper-slide">
+                    <div class="swiper-inner">
+                      <img
+                        src="assets/img/a5de0c8.webp"
+                        alt="업데이트 이미지"
+                      />
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="swiper-inner">
+                      <img
+                        src="assets/img/53f79b4.webp"
+                        alt="업데이트 이미지"
+                      />
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="swiper-inner">
+                      <img
+                        src="assets/img/86be523.webp"
+                        alt="업데이트 이미지"
+                      />
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="swiper-inner">
+                      <img
+                        src="assets/img/f0601a2.webp"
+                        alt="업데이트 이미지"
+                      />
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="swiper-inner">
+                      <img
+                        src="assets/img/dc5f1e0.webp"
+                        alt="업데이트 이미지"
+                      />
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="swiper-inner">
+                      <img
+                        src="assets/img/e600a41.webp"
+                        alt="업데이트 이미지"
+                      />
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="swiper-inner">
+                      <img
+                        src="assets/img/6d065e4.webp"
+                        alt="업데이트 이미지"
+                      />
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="swiper-inner">
+                      <img
+                        src="assets/img/ba7d103.webp"
+                        alt="업데이트 이미지"
+                      />
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="swiper-inner">
+                      <img
+                        src="assets/img/5f80a94.webp"
+                        alt="업데이트 이미지"
+                      />
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="swiper-inner">
+                      <img
+                        src="assets/img/65d790d.webp"
+                        alt="업데이트 이미지"
+                      />
+                    </div>
+                  </li>
+                </ul>
+                <div class="swiper-navigation">
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+                <div class="swiper-pagination-bullets">
+                  <span class="swiper-pagination-bullet"></span>
+                  <span class="swiper-pagination-bullet"></span>
+                  <span class="swiper-pagination-bullet"></span>
+                  <span class="swiper-pagination-bullet"></span>
+                  <span class="swiper-pagination-bullet"></span>
+                  <span class="swiper-pagination-bullet"></span>
+                  <span class="swiper-pagination-bullet"></span>
+                  <span class="swiper-pagination-bullet"></span>
+                  <span class="swiper-pagination-bullet"></span>
+                  <span class="swiper-pagination-bullet"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="aespa-btm-section">
+            <div class="main-gallery"></div>
+            <div class="main-notice">
+              <div class="notice-inner">
+                <h3 class="notice-title">이벤트 유의사항</h3>
+                <ul class="notice-list">
+                  <li class="notice-item">
+                    <span class="notice-text">
+                      본 이벤트는 게임 내 이벤트 배너 또는 Krafton ID를 통해
+                      참여 가능합니다.
+                    </span>
+                  </li>
+                  <li class="notice-item">
+                    <span class="notice-text">
+                      이벤트 참여는 계정 당 1회만 가능합니다. 각 플랫폼 별로
+                      모두 참여 가능합니다.
+                    </span>
+                  </li>
+                  <li class="notice-item">
+                    <span class="notice-text">
+                      이벤트 보상은 조건 달성 시 인게임 커스터마이즈 탭으로 자동
+                      지급됩니다.
+                    </span>
+                  </li>
+                  <li class="notice-item">
+                    <span class="notice-text">
+                      본 이벤트에 참가할 경우, 이벤트 참여 의사 확인 및 보상
+                      지급을 위하여 게임ID, 서비스 이용기록이 수집, 이용될 수
+                      있습니다.
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gotop-btn">
+          <div class="go-top">
+            <span class="go-top-icon">
+              <svg
+                width="44"
+                height="55"
+                viewBox="0 0 44 55"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_2708_1767)" fill="#fff">
+                  <path
+                    d="M32.66 10.296h1.26s.25.041.194-.292l-.387-1.068s-.114-.291-.485-.291c-.37 0-.484.29-.484.29l-.388 1.07s-.156.29.29.29Zm-16.881-.195h1.147c.407 0 .265-.265.265-.265l-.353-.973s-.105-.265-.442-.265-.442.265-.442.265l-.353.973c-.05.303.177.265.177.265Zm11.294 0h1.147s.227.038.176-.265l-.352-.973s-.105-.265-.442-.265c-.338 0-.442.265-.442.265l-.353.973s-.142.265.265.265Zm-7.303 14.57-6.59.097c-.12-.464-.387-.388-.387-.388v.485c0 .483.388.486.388.486s5.693.78 6.3.874c.606.094.678-.097.678-.097v-.971c0-.586-.388-.486-.388-.486Zm-9.69-14.375h1.26c.446 0 .29-.292.29-.292l-.388-1.068s-.114-.291-.484-.291-.485.29-.485.29l-.388 1.07c-.055.332.194.29.194.29Z"
+                  ></path>
+                  <path
+                    d="m43.612 10.975-18.132-.663-.282-.988s-.26-.633-.387 0v1.024a.387.387 0 0 0-.194.335v.486l4.361.194-4.361.195v.68h-.199c-.01-3.415-.035-6.878-.092-7.673-.12-1.674-1.4-3.538-1.648-3.982C22.43.139 22 0 22 0s-.43.139-.678.583c-.248.444-1.529 2.308-1.648 3.982-.056.795-.081 4.258-.092 7.672h-.199v-.68l-4.361-.194 4.361-.194v-.486a.388.388 0 0 0-.194-.335V9.324c-.128-.633-.387 0-.387 0l-.282.988-18.132.663a.388.388 0 0 0-.388.388v1.846c0 .214.173.388.388.388l6.008.502v-.696s.05-.153.182-.196c.099-.032.287-.003.303.196v.736l12.115 1.012a.388.388 0 0 0 .387-.388v-.486h.195v.133c.005.21.036.609.194.741.217.182.267.515.194.68 0 0-.088.03-.291-.097-.034-.02-.066-.04-.098-.057-.002 2.302.001 4.039.001 4.039s-.007 1.146.259 2.476l-6.074 1.312s-.58.215-.581.68c-.001.464.364.388.775.388.41 0 5.815-.194 5.815-.194s.658-.063.594 1.012c-.007.038-.013.056-.013.056s-.074.398.291.583c.366.184.442.971 1.357.971s.991-.787 1.357-.971c.365-.185.29-.583.29-.583s-.005-.018-.012-.056c-.063-1.075.594-1.012.594-1.012s5.404.194 5.815.194c.41 0 .776.076.775-.389 0-.464-.581-.68-.581-.68l-6.074-1.31c.266-1.331.259-2.477.259-2.477s.003-1.736 0-4.04a1.819 1.819 0 0 0-.097.058c-.204.126-.29.097-.29.097-.074-.165-.024-.498.193-.68.157-.131.188-.53.194-.741v-.133h.195v.486c0 .214.173.388.387.388l12.115-1.012v-.736c.016-.2.204-.228.303-.196.132.042.181.196.181.196v.696l6.01-.502a.388.388 0 0 0 .387-.388v-1.846a.388.388 0 0 0-.388-.388h-.002ZM23.357 2.914l-.29-.486C22.612 1.695 22 1.845 22 1.845s-.613-.15-1.066.583l-.29.486s-.356.582-.195-.292c0 0 .55-1.457 1.551-1.457 1 0 1.55 1.457 1.55 1.457.162.874-.193.292-.193.292Z"
+                  ></path>
+                  <path
+                    d="m30.82 24.768-6.59-.097s-.389-.1-.389.486v.97s.072.192.679.098c.607-.094 6.3-.874 6.3-.874s.387-.003.387-.486v-.485s-.267-.076-.388.388Z"
+                  ></path>
+                </g>
+                <path fill="#fff" d="M21 35h2v8h-2zm0 12h2v8h-2z"></path>
+                <defs>
+                  <clipPath id="clip0_2708_1767">
+                    <path fill="#fff" d="M0 0h44v27H0z"></path>
+                  </clipPath>
+                </defs>
+              </svg>
+            </span>
+          </div>
         </div>
       </main>
-      <footer class="footer"></footer>
+      <footer class="footer">
+        <div class="footer-inner">
+          <div class="footer-social">
+            <span class="footer-social-list">
+              <a href="#">
+                <span class="social-icon">
+                  <svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect width="40" height="40" rx="8" fill="#1877F2"></rect>
+                    <g clip-path="url(#clip0_5_554)">
+                      <path
+                        d="M29 20a9 9 0 1 0-18 0c0 4.492 3.291 8.215 7.594 8.89v-6.288h-2.285V20h2.285v-1.983c0-2.255 1.343-3.501 3.4-3.501.984 0 2.014.175 2.014.175v2.215h-1.135c-1.118 0-1.467.694-1.467 1.407V20h2.496l-.399 2.602h-2.097v6.289A9.002 9.002 0 0 0 29 20Z"
+                        fill="#fff"
+                      ></path>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_5_554">
+                        <path
+                          fill="#fff"
+                          transform="translate(11 11)"
+                          d="M0 0h18v18H0z"
+                        ></path>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </span>
+                <span class="social-icon-on">
+                  <svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect width="40" height="40" rx="8" fill="#fff"></rect>
+                    <g clip-path="url(#clip0_30_2926)">
+                      <path
+                        d="M29 20a9 9 0 1 0-18 0c0 4.492 3.291 8.215 7.594 8.89v-6.288h-2.285V20h2.285v-1.983c0-2.255 1.343-3.501 3.4-3.501.984 0 2.014.175 2.014.175v2.215h-1.135c-1.118 0-1.467.694-1.467 1.407V20h2.496l-.399 2.602h-2.097v6.289A9.002 9.002 0 0 0 29 20Z"
+                        fill="#1877F2"
+                      ></path>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_30_2926">
+                        <path
+                          fill="#fff"
+                          transform="translate(11 11)"
+                          d="M0 0h18v18H0z"
+                        ></path>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </span>
+              </a>
+              <a href="#">
+                <span class="social-icon">
+                  <svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect width="40" height="40" rx="8" fill="red"></rect>
+                    <path
+                      d="M28.82 16.4s-.175-1.24-.716-1.786c-.686-.717-1.452-.72-1.804-.763-2.517-.183-6.297-.183-6.297-.183h-.006s-3.78 0-6.297.183c-.352.042-1.118.046-1.803.763-.542.545-.714 1.786-.714 1.786S11 17.86 11 19.315v1.364c0 1.455.18 2.914.18 2.914s.175 1.241.713 1.786c.685.717 1.585.693 1.986.77 1.442.137 6.121.18 6.121.18s3.783-.008 6.3-.187c.352-.042 1.118-.046 1.803-.763.542-.545.718-1.786.718-1.786S29 22.138 29 20.68v-1.364c0-1.456-.18-2.915-.18-2.915Zm-10.68 5.934v-5.058l4.862 2.538-4.862 2.52Z"
+                      fill="#fff"
+                    ></path>
+                  </svg>
+                </span>
+                <span class="social-icon-on">
+                  <svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect width="40" height="40" rx="8" fill="#fff"></rect>
+                    <path
+                      d="M28.82 16.4s-.175-1.24-.716-1.786c-.686-.717-1.452-.72-1.804-.763-2.517-.183-6.297-.183-6.297-.183h-.006s-3.78 0-6.297.183c-.352.042-1.118.046-1.803.763-.542.545-.714 1.786-.714 1.786S11 17.86 11 19.315v1.364c0 1.455.18 2.914.18 2.914s.175 1.241.713 1.786c.685.717 1.585.693 1.986.77 1.442.137 6.121.18 6.121.18s3.783-.008 6.3-.187c.352-.042 1.118-.046 1.803-.763.542-.545.718-1.786.718-1.786S29 22.138 29 20.68v-1.364c0-1.456-.18-2.915-.18-2.915Zm-10.68 5.934v-5.058l4.862 2.538-4.862 2.52Z"
+                      fill="red"
+                    ></path>
+                  </svg>
+                </span>
+              </a>
+              <a href="#">
+                <span class="social-icon">
+                  <svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <rect
+                      width="40"
+                      height="40"
+                      rx="8"
+                      fill="url(#icon-instagram-pattern)"
+                    ></rect>
+                    <g clip-path="url(#clip0_5_572)">
+                      <g clip-path="url(#clip1_5_572)" fill="#fff">
+                        <path
+                          d="M20 12.62c2.405 0 2.69.011 3.635.053.88.04 1.354.187 1.67.31.418.162.72.358 1.034.671.316.317.51.616.671 1.034.123.316.27.794.31 1.67.042.949.052 1.234.052 3.635 0 2.405-.01 2.69-.052 3.635-.04.879-.187 1.354-.31 1.67-.162.418-.358.72-.671 1.034-.317.316-.616.51-1.034.671-.316.123-.794.27-1.67.31-.95.042-1.234.052-3.635.052-2.405 0-2.69-.01-3.635-.052-.88-.04-1.354-.187-1.67-.31a2.784 2.784 0 0 1-1.034-.671 2.769 2.769 0 0 1-.671-1.034c-.123-.316-.27-.794-.31-1.67-.042-.95-.052-1.234-.052-3.635 0-2.405.01-2.69.053-3.635.038-.88.186-1.354.309-1.67.162-.418.358-.72.671-1.034.317-.316.616-.51 1.034-.671.316-.123.794-.27 1.67-.31.946-.042 1.23-.052 3.635-.052ZM20 11c-2.443 0-2.75.01-3.709.053-.956.042-1.614.197-2.183.418a4.393 4.393 0 0 0-1.596 1.04 4.41 4.41 0 0 0-1.04 1.593c-.222.573-.377 1.227-.42 2.184C11.012 17.25 11 17.556 11 20c0 2.443.01 2.75.053 3.709.042.956.197 1.614.418 2.183a4.393 4.393 0 0 0 1.04 1.596 4.4 4.4 0 0 0 1.593 1.037c.573.222 1.227.377 2.184.419.96.042 1.265.053 3.709.053 2.443 0 2.749-.011 3.709-.053.956-.042 1.613-.197 2.183-.419a4.4 4.4 0 0 0 1.592-1.037 4.4 4.4 0 0 0 1.037-1.592c.222-.573.377-1.227.419-2.184.042-.96.052-1.265.052-3.709 0-2.443-.01-2.749-.052-3.709-.043-.956-.197-1.613-.419-2.183a4.216 4.216 0 0 0-1.03-1.6 4.4 4.4 0 0 0-1.592-1.036c-.573-.222-1.227-.377-2.184-.419C22.75 11.011 22.444 11 20 11Z"
+                        ></path>
+                        <path
+                          d="M20 15.377a4.624 4.624 0 0 0 0 9.246 4.624 4.624 0 0 0 0-9.246Zm0 7.622A3 3 0 1 1 20 17a3 3 0 0 1 0 6Zm5.885-7.805a1.08 1.08 0 1 1-2.159 0 1.08 1.08 0 0 1 2.16 0Z"
+                        ></path>
+                      </g>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_5_572">
+                        <path
+                          fill="#fff"
+                          transform="translate(11 11)"
+                          d="M0 0h18v18H0z"
+                        ></path>
+                      </clipPath>
+                      <clipPath id="clip1_5_572">
+                        <path
+                          fill="#fff"
+                          transform="translate(11 11)"
+                          d="M0 0h18v18H0z"
+                        ></path>
+                      </clipPath>
+                      <pattern
+                        id="icon-instagram-pattern"
+                        patternContentUnits="objectBoundingBox"
+                        width="1"
+                        height="1"
+                      >
+                        <use
+                          xlink:href="#icon-instagram-image"
+                          transform="scale(.025)"
+                        ></use>
+                      </pattern>
+                      <image
+                        id="icon-instagram-image"
+                        width="40"
+                        height="40"
+                        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAIAAAADnC86AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDcuMi1jMDAwIDc5LjFiNjVhNzliNCwgMjAyMi8wNi8xMy0yMjowMTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIzLjUgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkE0QTkxQkY4Mjg0QTExRUQ4RjgwQkJEOUMwOTZCNkU4IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkE0QTkxQkY5Mjg0QTExRUQ4RjgwQkJEOUMwOTZCNkU4Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QTRBOTFCRjYyODRBMTFFRDhGODBCQkQ5QzA5NkI2RTgiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QTRBOTFCRjcyODRBMTFFRDhGODBCQkQ5QzA5NkI2RTgiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7nemzWAAADFklEQVR42qxXi3LUMAyUEt0dA+UT+Qk+lQ8phU6BGe4sYluxJVl5DHCTSW1Z2l2tkraHnz99gf/0wZSAEzKXRb7jsk1cggkSqy3TWVBmsECyKHB9kQrxSrPSC1k/FeK8Yas3BhqFK+61UYm3rdWxiqB3L8+luCsyWJ3SxVXySiOLTtAEsaasa7q9PEccbXsOmj10GNRHdPv+1RyrnmrQQoxM7JnABkGd5jXUI7q+fjtUtxTsBNctKPRlAQDmqOTXYL7T5e01lCzFeisLaOjytLfFCppz2roKqu9GFVE+dPnx1uX0PqA31CqbVwa0bGXH268jYLm3HJp//cSmpbbVUCr9IDaARQNqyOxvA2HPxPffx6BrTRDvH/ZMsuW2bax5xlgKjsQGoOUWgprOTCb2dEJMkSde7C6oKOuxtRM0ZCoHgaaZY9BILLq0EFQTdyxG1DNimqc0glpcVXMO1JiEurHeBs1zgrGs43ZQ7b8KMg6gOBxpV4r6pWNKx2LRDLL1jTHoxpG1SojxH0HbUTePTT9DM0TzI1QUFKt3GnfjYrsydtRKdEmWb1Wt7EWtw8WVB2ge+I7pGhCriR6gRDkyI9a8Rd5V171TaSwpwaXjx/gIOLK43s3P2Gv9iIK5Y9zpQIMq9E2TNVPkcOuELkvHGA/JmxyZYURrWZG9ar38I3C9j5MLmo6dOO7YyF2dQ+nYzDKa2QBhLYmYfLsediG+HzDh7uAHD08ZkImvjw33+HxnZyIVp3HlGeP2I+AjwUT4oPvObTTRtT5codhD0EHTFs2IVojPmSyRwbd+P9V3kSJWh1PZQzGZwSwmeXmKOq7rfE0S5Nzx7R40aqR4QQIq6Aq3gk6gIv60KchWj6CSNJmyJrZp17hsMzVxeET4lDxoq5n+EjT2WV/LU81P5fvJFOAegVpcgO3ueTyl9JGdFpkf8C5lS/blPDTnk0sO8YdhThA/Gh4UxjX3HAjvxVtcfkzE73mD1eldJwr2SH+twClfGXiSrbzChcxuF+IBVEO3P5m5rIqtBFJfj1Ahaj5cEzRlXf8RYABcamZwbcYQMAAAAABJRU5ErkJggg=="
+                      ></image>
+                    </defs>
+                  </svg>
+                </span>
+                <span class="social-icon-on">
+                  <svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect width="40" height="40" rx="8" fill="#fff"></rect>
+                    <g clip-path="url(#clip0_30_2934)">
+                      <g clip-path="url(#clip1_30_2934)" fill="#B1155A">
+                        <path
+                          d="M20 12.62c2.405 0 2.69.011 3.635.053.88.04 1.354.187 1.67.31.418.162.72.358 1.034.671.316.317.51.616.671 1.034.123.316.27.794.31 1.67.042.949.052 1.234.052 3.635 0 2.405-.01 2.69-.052 3.635-.04.879-.187 1.354-.31 1.67-.162.418-.358.72-.671 1.034-.317.316-.616.51-1.034.671-.316.123-.794.27-1.67.31-.95.042-1.234.052-3.635.052-2.405 0-2.69-.01-3.635-.052-.88-.04-1.354-.187-1.67-.31a2.784 2.784 0 0 1-1.034-.671 2.769 2.769 0 0 1-.671-1.034c-.123-.316-.27-.794-.31-1.67-.042-.95-.052-1.234-.052-3.635 0-2.405.01-2.69.053-3.635.038-.88.186-1.354.309-1.67.162-.418.358-.72.671-1.034.317-.316.616-.51 1.034-.671.316-.123.794-.27 1.67-.31.946-.042 1.23-.052 3.635-.052ZM20 11c-2.443 0-2.75.01-3.709.053-.956.042-1.614.197-2.183.418a4.393 4.393 0 0 0-1.596 1.04 4.41 4.41 0 0 0-1.04 1.593c-.222.573-.377 1.227-.42 2.184C11.012 17.25 11 17.556 11 20c0 2.443.01 2.75.053 3.709.042.956.197 1.614.418 2.183a4.393 4.393 0 0 0 1.04 1.596 4.4 4.4 0 0 0 1.593 1.037c.573.222 1.227.377 2.184.419.96.042 1.265.053 3.709.053 2.443 0 2.749-.011 3.709-.053.956-.042 1.613-.197 2.183-.419a4.4 4.4 0 0 0 1.592-1.037 4.4 4.4 0 0 0 1.037-1.592c.222-.573.377-1.227.419-2.184.042-.96.052-1.265.052-3.709 0-2.443-.01-2.749-.052-3.709-.043-.956-.197-1.613-.419-2.183a4.216 4.216 0 0 0-1.03-1.6 4.4 4.4 0 0 0-1.592-1.036c-.573-.222-1.227-.377-2.184-.419C22.75 11.011 22.444 11 20 11Z"
+                        ></path>
+                        <path
+                          d="M20 15.377a4.624 4.624 0 0 0 0 9.246 4.624 4.624 0 0 0 0-9.246Zm0 7.622A3 3 0 1 1 20 17a3 3 0 0 1 0 6Zm5.885-7.805a1.08 1.08 0 1 1-2.159 0 1.08 1.08 0 0 1 2.16 0Z"
+                        ></path>
+                      </g>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_30_2934">
+                        <path
+                          fill="#fff"
+                          transform="translate(11 11)"
+                          d="M0 0h18v18H0z"
+                        ></path>
+                      </clipPath>
+                      <clipPath id="clip1_30_2934">
+                        <path
+                          fill="#fff"
+                          transform="translate(11 11)"
+                          d="M0 0h18v18H0z"
+                        ></path>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </span>
+              </a>
+              <a href="#">
+                <span class="social-icon">
+                  <svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect width="40" height="40" rx="8" fill="#5865F2"></rect>
+                    <path
+                      d="M26.238 14.387a14.848 14.848 0 0 0-3.664-1.136.056.056 0 0 0-.059.028 10.33 10.33 0 0 0-.456.937 13.705 13.705 0 0 0-4.115 0 9.452 9.452 0 0 0-.464-.937.058.058 0 0 0-.058-.028c-1.286.221-2.516.61-3.664 1.136a.052.052 0 0 0-.024.021c-2.334 3.486-2.973 6.887-2.66 10.245a.062.062 0 0 0 .024.042 14.926 14.926 0 0 0 4.494 2.273.058.058 0 0 0 .064-.021c.346-.473.655-.972.92-1.496a.057.057 0 0 0-.032-.08 9.828 9.828 0 0 1-1.404-.668.058.058 0 0 1-.006-.096c.095-.07.189-.144.279-.219a.056.056 0 0 1 .058-.008c2.946 1.345 6.135 1.345 9.046 0a.056.056 0 0 1 .06.008 7.7 7.7 0 0 0 .279.219.058.058 0 0 1-.005.096 9.228 9.228 0 0 1-1.405.668.057.057 0 0 0-.03.08c.27.524.578 1.022.918 1.495.014.02.04.029.063.021a14.877 14.877 0 0 0 4.502-2.272.058.058 0 0 0 .023-.041c.376-3.883-.628-7.255-2.66-10.245a.046.046 0 0 0-.024-.022Zm-9.223 8.221c-.887 0-1.618-.814-1.618-1.814s.717-1.814 1.618-1.814c.908 0 1.632.821 1.618 1.814 0 1-.717 1.814-1.618 1.814Zm5.981 0c-.887 0-1.618-.814-1.618-1.814s.717-1.814 1.618-1.814c.908 0 1.632.821 1.618 1.814 0 1-.71 1.814-1.618 1.814Z"
+                      fill="#fff"
+                    ></path>
+                  </svg>
+                </span>
+                <span class="social-icon-on">
+                  <svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect width="40" height="40" rx="8" fill="#fff"></rect>
+                    <path
+                      d="M26.238 14.387a14.848 14.848 0 0 0-3.664-1.136.056.056 0 0 0-.059.028 10.33 10.33 0 0 0-.456.937 13.705 13.705 0 0 0-4.115 0 9.452 9.452 0 0 0-.464-.937.058.058 0 0 0-.058-.028c-1.286.221-2.516.61-3.664 1.136a.052.052 0 0 0-.024.021c-2.334 3.486-2.973 6.887-2.66 10.245a.062.062 0 0 0 .024.042 14.926 14.926 0 0 0 4.494 2.273.058.058 0 0 0 .064-.021c.346-.473.655-.972.92-1.496a.057.057 0 0 0-.032-.08 9.828 9.828 0 0 1-1.404-.668.058.058 0 0 1-.006-.096c.095-.07.189-.144.279-.219a.056.056 0 0 1 .058-.008c2.946 1.345 6.135 1.345 9.046 0a.056.056 0 0 1 .06.008 7.7 7.7 0 0 0 .279.219.058.058 0 0 1-.005.096 9.228 9.228 0 0 1-1.405.668.057.057 0 0 0-.03.08c.27.524.578 1.022.918 1.495.014.02.04.029.063.021a14.877 14.877 0 0 0 4.502-2.272.058.058 0 0 0 .023-.041c.376-3.883-.628-7.255-2.66-10.245a.046.046 0 0 0-.024-.022Zm-9.223 8.221c-.887 0-1.618-.814-1.618-1.814s.717-1.814 1.618-1.814c.908 0 1.632.821 1.618 1.814 0 1-.717 1.814-1.618 1.814Zm5.981 0c-.887 0-1.618-.814-1.618-1.814s.717-1.814 1.618-1.814c.908 0 1.632.821 1.618 1.814 0 1-.71 1.814-1.618 1.814Z"
+                      fill="#5865F2"
+                    ></path>
+                  </svg>
+                </span>
+              </a>
+              <a href="#">
+                <span class="social-icon">
+                  <svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect width="40" height="40" rx="8" fill="#00C73C"></rect>
+                    <g clip-path="url(#clip0_2962_60208)">
+                      <g clip-path="url(#clip1_2962_60208)">
+                        <path
+                          d="M18.601 11.375h4.249c.06 0 .116.023.161.064a.232.232 0 0 1 .064.162c-.06 3.572-3.559 4.145-3.596 4.149h-4.523a.219.219 0 0 1-.221-.241c.3-3.58 3.829-4.127 3.866-4.134Zm7.748 11.472h-1.77c-.341 1.897-1.662 5.778-6.728 5.778-6.712 0-6.851-6.8-6.851-6.8v-4.084c0-.125.101-.223.221-.223H26.35A2.661 2.661 0 0 1 29 20.185a2.661 2.661 0 0 1-2.651 2.666v-.004Zm-.064-3.975a1.29 1.29 0 0 0-1.286 1.294c0 .713.577 1.293 1.286 1.293.709 0 1.286-.58 1.286-1.293s-.577-1.294-1.286-1.294Z"
+                          fill="#fff"
+                        ></path>
+                      </g>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_2962_60208">
+                        <path
+                          fill="#fff"
+                          transform="translate(11 11)"
+                          d="M0 0h18v18H0z"
+                        ></path>
+                      </clipPath>
+                      <clipPath id="clip1_2962_60208">
+                        <path
+                          fill="#fff"
+                          transform="translate(11 11.375)"
+                          d="M0 0h18v17.25H0z"
+                        ></path>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </span>
+                <span class="social-icon-on">
+                  <svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect width="40" height="40" rx="8" fill="#fff"></rect>
+                    <g clip-path="url(#clip0_2962_60218)">
+                      <g clip-path="url(#clip1_2962_60218)">
+                        <path
+                          d="M18.601 11.375h4.249c.06 0 .116.023.161.064a.232.232 0 0 1 .064.162c-.06 3.572-3.559 4.145-3.596 4.149h-4.523a.219.219 0 0 1-.221-.241c.3-3.58 3.829-4.127 3.866-4.134Zm7.748 11.472h-1.77c-.341 1.897-1.662 5.778-6.728 5.778-6.712 0-6.851-6.8-6.851-6.8v-4.084c0-.125.101-.223.221-.223H26.35A2.661 2.661 0 0 1 29 20.185a2.661 2.661 0 0 1-2.651 2.666v-.004Zm-.064-3.975a1.29 1.29 0 0 0-1.286 1.294c0 .713.577 1.293 1.286 1.293.709 0 1.286-.58 1.286-1.293s-.577-1.294-1.286-1.294Z"
+                          fill="#00C73C"
+                        ></path>
+                      </g>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_2962_60218">
+                        <path
+                          fill="#fff"
+                          transform="translate(11 11)"
+                          d="M0 0h18v18H0z"
+                        ></path>
+                      </clipPath>
+                      <clipPath id="clip1_2962_60218">
+                        <path
+                          fill="#fff"
+                          transform="translate(11 11.375)"
+                          d="M0 0h18v17.25H0z"
+                        ></path>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </span>
+              </a>
+              <a href="#">
+                <span class="social-icon">
+                  <svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect width="40" height="40" rx="8" fill="#FE2C55"></rect>
+                    <path
+                      d="M25.433 14.607A4.304 4.304 0 0 1 23.483 11h-3.084v12.401a2.607 2.607 0 0 1-2.593 2.505 2.603 2.603 0 0 1 0-5.205 2.6 2.6 0 0 1 .766.12v-3.157a5.702 5.702 0 0 0-.766-.056c-3.136 0-5.68 2.557-5.68 5.696 0 1.927.96 3.634 2.421 4.665A5.637 5.637 0 0 0 17.798 29c3.132 0 5.677-2.554 5.677-5.696v-6.289a7.325 7.325 0 0 0 4.29 1.384v-3.094c-.86 0-1.663-.259-2.336-.697h.004Z"
+                      fill="#fff"
+                    ></path>
+                  </svg>
+                </span>
+                <span class="social-icon-on">
+                  <svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect width="40" height="40" rx="8" fill="#fff"></rect>
+                    <path
+                      d="M25.433 14.607A4.304 4.304 0 0 1 23.483 11h-3.084v12.401a2.607 2.607 0 0 1-2.593 2.505 2.603 2.603 0 0 1 0-5.205 2.6 2.6 0 0 1 .766.12v-3.157a5.702 5.702 0 0 0-.766-.056c-3.136 0-5.68 2.557-5.68 5.696 0 1.927.96 3.634 2.421 4.665A5.637 5.637 0 0 0 17.798 29c3.132 0 5.677-2.554 5.677-5.696v-6.289a7.325 7.325 0 0 0 4.29 1.384v-3.094c-.86 0-1.663-.259-2.336-.697h.004Z"
+                      fill="#FE2C55"
+                    ></path>
+                  </svg>
+                </span>
+              </a>
+            </span>
+          </div>
+          <div class="footer-logo">
+            <img src="assets/img/6d1bd37.webp" alt="PUBG | KRAFTON" />
+            <map name="footer-logo">
+              <area
+                shape="rect"
+                coords="100,0,214,48"
+                href="https://www.krafton.com/"
+                target="_blank"
+                alt="KRAFTON"
+                class="footer__logo-image-map"
+              />
+            </map>
+          </div>
+          <span class="footer-link">
+            <span class="footer-link-wrap">
+              <span class="footer-link-bar">|</span>
+              <a href="#">개인정보 처리방침</a>
+            </span>
+            <span class="footer-link-wrap">
+              <span class="footer-link-bar">|</span>
+              <a href="#">서비스 이용약관</a>
+            </span>
+            <span class="footer-link-wrap">
+              <span class="footer-link-bar">|</span>
+              <a href="#">운영정책</a>
+            </span>
+            <span class="footer-link-wrap">
+              <a href="#">쿠키 설정</a>
+            </span>
+          </span>
+          <div class="footer-copyright">
+            © 2025 KRAFTON, INC. PUBG IS A REGISTERED TRADEMARK OR SERVICE MARK
+            OF KRAFTON, INC.
+          </div>
+          <div class="footer-timezone">
+            <div class="timezone-items">
+              <span class="timezone-text">UTC</span>
+              <span class="timezone-time utc"></span>
+            </div>
+            <div class="timezone-items active">
+              <span class="timezone-icon">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m19.3 20.7 1.4-1.4-3.7-3.7V11h-2v5.4l4.3 4.3ZM16 26a9.733 9.733 0 0 1-3.9-.788 10.092 10.092 0 0 1-3.175-2.137c-.9-.9-1.612-1.958-2.137-3.175A9.733 9.733 0 0 1 6 16a9.74 9.74 0 0 1 .788-3.9 10.091 10.091 0 0 1 2.137-3.175c.9-.9 1.958-1.613 3.175-2.138A9.743 9.743 0 0 1 16 6a9.74 9.74 0 0 1 3.9.787 10.105 10.105 0 0 1 3.175 2.138c.9.9 1.612 1.958 2.137 3.175A9.733 9.733 0 0 1 26 16a9.733 9.733 0 0 1-.788 3.9 10.092 10.092 0 0 1-2.137 3.175c-.9.9-1.958 1.612-3.175 2.137A9.733 9.733 0 0 1 16 26Zm0-2c2.217 0 4.104-.779 5.663-2.337C23.221 20.104 24 18.217 24 16s-.779-4.104-2.337-5.663C20.104 8.779 18.217 8 16 8s-4.104.779-5.662 2.337C8.779 11.896 8 13.783 8 16s.78 4.104 2.338 5.663C11.896 23.221 13.783 24 16 24Z"
+                    fill="#F2AA00"
+                  ></path>
+                </svg>
+              </span>
+              <span class="timezone-text">KST</span>
+              <span class="timezone-time kst"></span>
+            </div>
+          </div>
+          <div class="footer-grade">
+            <img src="assets/img/5572240.png" alt="Grade" />
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

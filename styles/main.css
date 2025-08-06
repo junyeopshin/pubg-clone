@@ -781,3 +781,134 @@
   height: 100%;
   vertical-align: top;
 }
+/* btm */
+.aespa-btm-section {
+  z-index: 3;
+  position: relative;
+  margin-top: -246px;
+  background: url("../assets/img/4e096ce.webp") top / cover no-repeat;
+}
+/* notice */
+.main-notice {
+  pointer-events: none;
+  position: relative;
+  padding-block: 60px 138px;
+  background: rgba(131, 0, 134, 0.8);
+}
+.notice-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-inline: 40px;
+}
+.notice-title {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 32px;
+  line-height: 130%;
+  font-style: normal;
+  color: #fff;
+}
+.notice-list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 16px;
+}
+.notice-item {
+  position: relative;
+  -webkit-padding-start: 20px;
+  padding-inline-start: 20px;
+  display: list-item;
+  text-align: -webkit-match-parent;
+  unicode-bidi: isolate;
+}
+.notice-item::before {
+  content: "";
+  position: absolute;
+  inset-block-start: 12px;
+  inset-inline-start: 0;
+  width: 3px;
+  height: 3px;
+  background-color: #eac5ea;
+  border-radius: 100%;
+}
+.notice-text {
+  font-family: "Roboto Condensed";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  color: #eac5ea;
+}
+
+/* gotop btn */
+.gotop-btn {
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  z-index: 1500;
+  inset-block-end: 40px;
+  inset-inline-end: 0;
+  transform: translateX(50%);
+  transition: 0.4s ease-in-out;
+}
+.go-top {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  color: #fff;
+  background: #333;
+  -webkit-clip-path: polygon(10px 0, 100% 0, 100% 100%, 0 100%, 0 10px);
+  clip-path: polygon(10px 0, 100% 0, 100% 100%, 0 100%, 0 10px);
+  transition: 0.2s ease-in-out;
+  appearance: none;
+  cursor: pointer;
+}
+.go-top-icon {
+  position: relative;
+  height: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  vertical-align: middle;
+  transform: translateY(15%);
+  transition: 0.2s ease-in-out;
+}
+.go-top:hover .go-top-icon {
+  animation: flying 1.8s linear infinite;
+}
+@keyframes flying {
+  0% {
+    transform: translateY(15%);
+  }
+  35% {
+    transform: translateY(-100%);
+  }
+  36% {
+    transform: translate(-100%, -100%);
+  }
+  37% {
+    transform: translate(-100%, 100%);
+  }
+  38% {
+    transform: translateY(100%);
+  }
+  66% {
+    transform: translateY(15%);
+  }
+  to {
+    transform: translateY(15%);
+  }
+}
+.sticky {
+  position: absolute;
+}
+.gotop-btn.show {
+  opacity: 1;
+  transform: translateX(0%);
+  pointer-events: auto;
+}
