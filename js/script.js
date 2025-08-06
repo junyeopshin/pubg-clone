@@ -214,3 +214,15 @@ window.addEventListener("scroll", function () {
     rightSb.classList.remove("sticky");
   }
 });
+
+// 갤러리 탭 메뉴 기능
+const tabs = document.querySelectorAll(".gallery-tab-menu");
+
+tabs.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    // 모든 탭에서 클래스 제거
+    tabs.forEach((t) => t.classList.remove("gallery-tab-active"));
+    // 클릭한 탭에 클래스 추가
+    tab.classList.add("gallery-tab-active");
+  });
+});

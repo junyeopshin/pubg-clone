@@ -1,4 +1,4 @@
-const swiper = new Swiper(".swiper", {
+const updateSwiper = new Swiper(".main-update .swiper", {
   direction: "horizontal",
   loop: true,
   slidesPerView: "auto",
@@ -6,12 +6,12 @@ const swiper = new Swiper(".swiper", {
   centeredSlides: true,
 
   pagination: {
-    el: ".swiper-pagination-bullets",
+    el: ".main-update .swiper-pagination-bullets",
     clickable: true,
   },
 
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".main-update .swiper-button-next",
+    prevEl: ".main-update .swiper-button-prev",
   },
 });
