@@ -216,13 +216,25 @@ window.addEventListener("scroll", function () {
 });
 
 // 갤러리 탭 메뉴 기능
-const tabs = document.querySelectorAll(".gallery-tab-menu");
+// 탭 요소 가져오기
+const tabPc = document.querySelector(".gallery-tab-pc");
+const tabMb = document.querySelector(".gallery-tab-mb");
 
-tabs.forEach((tab) => {
-  tab.addEventListener("click", () => {
-    // 모든 탭에서 클래스 제거
-    tabs.forEach((t) => t.classList.remove("gallery-tab-active"));
-    // 클릭한 탭에 클래스 추가
-    tab.classList.add("gallery-tab-active");
-  });
-});
+// 슬라이드 영역 가져오기
+const pcSlide = document.querySelector(".gallery-pc-slide");
+const mbSlide = document.querySelector(".gallery-mb-slide");
+
+// 공통 탭 클릭 핸들러
+function handleTabClick(isPcTab) {
+  // 활성화 탭 바꾸기
+  tabPc.classList.toggle("gallery-tab-active", isPcTab);
+  tabMb.classList.toggle("gallery-tab-active", !isPcTab);
+
+  // 슬라이드 show/hide 전환
+  pcSlide.classList.toggle("hide", !isPcTab);
+  mbSlide.classList.toggle("hide", isPcTab);
+}
+
+// 이벤트 등록
+tabPc.addEventListener("click", () => handleTabClick(true));
+tabMb.addEventListener("click", () => handleTabClick(false));
